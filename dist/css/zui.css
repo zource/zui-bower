@@ -1582,6 +1582,30 @@ dl, ol, ul {
   padding-top: 0;
 }
 
+.zui-note {
+  background: #F3F34C;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  cursor: move;
+  display: none;
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 2em;
+  max-width: 250px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+}
+.zui-note .zui-note-title {
+  font-weight: bold;
+}
+.zui-note .zui-icon.zui-icon-x {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .zui-page-header {
   clear: both;
   width: auto;
