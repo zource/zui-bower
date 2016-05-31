@@ -1,4 +1,148 @@
 @charset "UTF-8";
+.zui-cursor-all-scroll {
+  cursor: all-scroll;
+}
+
+.zui-cursor-alias {
+  cursor: alias;
+}
+
+.zui-cursor-auto {
+  cursor: auto;
+}
+
+.zui-cursor-cell {
+  cursor: cell;
+}
+
+.zui-cursor-col-resize {
+  cursor: col-resize;
+}
+
+.zui-cursor-context-menu {
+  cursor: context-menu;
+}
+
+.zui-cursor-copy {
+  cursor: copy;
+}
+
+.zui-cursor-crosshair {
+  cursor: crosshair;
+}
+
+.zui-cursor-default {
+  cursor: default;
+}
+
+.zui-cursor-e-resize {
+  cursor: e-resize;
+}
+
+.zui-cursor-ew-resize {
+  cursor: ew-resize;
+}
+
+.zui-cursor-grab {
+  cursor: grab;
+}
+
+.zui-cursor-grabbing {
+  cursor: grabbing;
+}
+
+.zui-cursor-help {
+  cursor: help;
+}
+
+.zui-cursor-move {
+  cursor: move;
+}
+
+.zui-cursor-n-resize {
+  cursor: n-resize;
+}
+
+.zui-cursor-ne-resize {
+  cursor: ne-resize;
+}
+
+.zui-cursor-nesw-resize {
+  cursor: nesw-resize;
+}
+
+.zui-cursor-no-drop {
+  cursor: no-drop;
+}
+
+.zui-cursor-none {
+  cursor: none;
+}
+
+.zui-cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.zui-cursor-ns-resize {
+  cursor: ns-resize;
+}
+
+.zui-cursor-nw-resize {
+  cursor: nw-resize;
+}
+
+.zui-cursor-nwse-resize {
+  cursor: nwse-resize;
+}
+
+.zui-cursor-pointer {
+  cursor: pointer;
+}
+
+.zui-cursor-progress {
+  cursor: progress;
+}
+
+.zui-cursor-row-resize {
+  cursor: row-resize;
+}
+
+.zui-cursor-s-resize {
+  cursor: s-resize;
+}
+
+.zui-cursor-se-resize {
+  cursor: se-resize;
+}
+
+.zui-cursor-sw-resize {
+  cursor: sw-resize;
+}
+
+.zui-cursor-text {
+  cursor: text;
+}
+
+.zui-cursor-vertical-text {
+  cursor: vertical-text;
+}
+
+.zui-cursor-w-resize {
+  cursor: w-resize;
+}
+
+.zui-cursor-wait {
+  cursor: wait;
+}
+
+.zui-cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+.zui-cursor-zoom-out {
+  cursor: zoom-out;
+}
+
 *,
 *:before,
 *:after {
