@@ -1806,6 +1806,37 @@ input[type="submit"].disabled {
   content: "\f131";
 }
 
+.zui-footer {
+  background-color: #F5F5F5;
+  border-top: 1px solid #CCC;
+  display: block;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+}
+.zui-footer a {
+  color: #707070;
+}
+.zui-footer ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+.zui-footer ul li {
+  display: inline-block;
+  font: 1em;
+  line-height: 1em;
+  padding: 0;
+  white-space: nowrap;
+}
+.zui-footer ul li + li {
+  margin-left: 10px;
+}
+.zui-footer ul li + li:before {
+  content: "·";
+  margin-right: 10px;
+  speak: none;
+}
+
 fieldset legend + .checkbox {
   margin-top: 0;
   padding-top: 5px;
