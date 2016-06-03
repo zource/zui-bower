@@ -347,15 +347,15 @@ a.disabled:hover {
   color: #FFFFFF;
 }
 
-.zui-blanket {
+#zui-blanket {
   background: #000;
   height: 100%;
   left: 0;
-  opacity: .5;
+  opacity: 0.5;
   position: fixed;
   top: 0;
-  transition: opacity .2s;
-  transition-delay: .1s;
+  transition: opacity 0.2s;
+  transition-delay: 0.1s;
   visibility: visible;
   width: 100%;
   z-index: 2000;
