@@ -143,12 +143,163 @@
   cursor: zoom-out;
 }
 
+.zui-cursor-all-scroll {
+  cursor: all-scroll;
+}
+
+.zui-cursor-alias {
+  cursor: alias;
+}
+
+.zui-cursor-auto {
+  cursor: auto;
+}
+
+.zui-cursor-cell {
+  cursor: cell;
+}
+
+.zui-cursor-col-resize {
+  cursor: col-resize;
+}
+
+.zui-cursor-context-menu {
+  cursor: context-menu;
+}
+
+.zui-cursor-copy {
+  cursor: copy;
+}
+
+.zui-cursor-crosshair {
+  cursor: crosshair;
+}
+
+.zui-cursor-default {
+  cursor: default;
+}
+
+.zui-cursor-e-resize {
+  cursor: e-resize;
+}
+
+.zui-cursor-ew-resize {
+  cursor: ew-resize;
+}
+
+.zui-cursor-grab {
+  cursor: grab;
+}
+
+.zui-cursor-grabbing {
+  cursor: grabbing;
+}
+
+.zui-cursor-help {
+  cursor: help;
+}
+
+.zui-cursor-move {
+  cursor: move;
+}
+
+.zui-cursor-n-resize {
+  cursor: n-resize;
+}
+
+.zui-cursor-ne-resize {
+  cursor: ne-resize;
+}
+
+.zui-cursor-nesw-resize {
+  cursor: nesw-resize;
+}
+
+.zui-cursor-no-drop {
+  cursor: no-drop;
+}
+
+.zui-cursor-none {
+  cursor: none;
+}
+
+.zui-cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.zui-cursor-ns-resize {
+  cursor: ns-resize;
+}
+
+.zui-cursor-nw-resize {
+  cursor: nw-resize;
+}
+
+.zui-cursor-nwse-resize {
+  cursor: nwse-resize;
+}
+
+.zui-cursor-pointer {
+  cursor: pointer;
+}
+
+.zui-cursor-progress {
+  cursor: progress;
+}
+
+.zui-cursor-row-resize {
+  cursor: row-resize;
+}
+
+.zui-cursor-s-resize {
+  cursor: s-resize;
+}
+
+.zui-cursor-se-resize {
+  cursor: se-resize;
+}
+
+.zui-cursor-sw-resize {
+  cursor: sw-resize;
+}
+
+.zui-cursor-text {
+  cursor: text;
+}
+
+.zui-cursor-vertical-text {
+  cursor: vertical-text;
+}
+
+.zui-cursor-w-resize {
+  cursor: w-resize;
+}
+
+.zui-cursor-wait {
+  cursor: wait;
+}
+
+.zui-cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+.zui-cursor-zoom-out {
+  cursor: zoom-out;
+}
+
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+blockquote {
+  border-left: 1px solid #CCC;
+  color: #707070;
+  margin: 0px 0px 20px 20px;
+  padding: 10px 20px;
 }
 
 html {
@@ -180,6 +331,149 @@ body {
 
 [aria-hidden=true] {
   display: none;
+}
+
+a {
+  color: #AA2D4C;
+  text-decoration: none;
+}
+
+a:active, a:focus, a:hover {
+  text-decoration: underline;
+}
+
+a.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+a.disabled:active,
+a.disabled:focus,
+a.disabled:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.25;
+  text-transform: none;
+  margin: 0px 0px 20px 0px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.375rem;
+}
+h1.zui-subheader {
+  color: #6F6F6F;
+  font-size: 2.375rem;
+}
+
+h2 {
+  color: #333;
+  font-size: 2.125rem;
+}
+h2.zui-subheader {
+  color: #6F6F6F;
+  font-size: 2.125rem;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.875rem;
+}
+h3.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.875rem;
+}
+
+h4 {
+  color: #333;
+  font-size: 1.625rem;
+}
+h4.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.625rem;
+}
+
+h5 {
+  color: #333;
+  font-size: 1.375rem;
+}
+h5.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.375rem;
+}
+
+h6 {
+  color: #333;
+  font-size: 1.125rem;
+}
+h6.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.125rem;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  color: #6F6F6F;
+  line-height: 0;
+}
+
+hr {
+  background-color: #CCC;
+  border: 0px;
+  height: 1px;
+  margin: 20px 0px;
+}
+
+dl, ol, ul {
+  margin: 0 0 20px 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+p {
+  margin: 0px 0px 20px 0px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.show-inline {
+  display: inline-block;
 }
 
 .zui-alert {
@@ -276,26 +570,6 @@ body {
   color: #000;
 }
 
-a {
-  color: #AA2D4C;
-  text-decoration: none;
-}
-
-a:active, a:focus, a:hover {
-  text-decoration: underline;
-}
-
-a.disabled {
-  color: #999;
-  cursor: not-allowed;
-}
-
-a.disabled:active,
-a.disabled:focus,
-a.disabled:hover {
-  text-decoration: none;
-}
-
 .zui-badge {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 2em;
@@ -359,13 +633,6 @@ a.disabled:hover {
   visibility: visible;
   width: 100%;
   z-index: 2000;
-}
-
-blockquote {
-  border-left: 1px solid #CCC;
-  color: #707070;
-  margin: 0px 0px 20px 20px;
-  padding: 10px 20px;
 }
 
 a.zui-button,
@@ -2018,10 +2285,10 @@ textarea {
   border-radius: 3.01px;
   font-family: inherit;
   font-size: inherit;
-  height: auto;
   line-height: 1.4285714285714;
   margin: 0;
   max-width: 250px;
+  min-height: 150px;
   overflow-y: auto;
   padding: 4px 5px;
   vertical-align: baseline;
@@ -2136,85 +2403,6 @@ form .zui-icon-required {
   max-width: 75px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  line-height: 1.25;
-  text-transform: none;
-  margin: 0px 0px 20px 0px;
-}
-
-h1 {
-  color: #333;
-  font-size: 2.375rem;
-}
-h1.zui-subheader {
-  color: #6F6F6F;
-  font-size: 2.375rem;
-}
-
-h2 {
-  color: #333;
-  font-size: 2.125rem;
-}
-h2.zui-subheader {
-  color: #6F6F6F;
-  font-size: 2.125rem;
-}
-
-h3 {
-  color: #333;
-  font-size: 1.875rem;
-}
-h3.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.875rem;
-}
-
-h4 {
-  color: #333;
-  font-size: 1.625rem;
-}
-h4.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.625rem;
-}
-
-h5 {
-  color: #333;
-  font-size: 1.375rem;
-}
-h5.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.375rem;
-}
-
-h6 {
-  color: #333;
-  font-size: 1.125rem;
-}
-h6.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.125rem;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 60%;
-  color: #6F6F6F;
-  line-height: 0;
-}
-
-hr {
-  background-color: #CCC;
-  border: 0px;
-  height: 1px;
-  margin: 20px 0px;
-}
-
 a img {
   border: none;
 }
@@ -2321,10 +2509,6 @@ kbd {
 }
 .zui-layout-group.zui-layout-group-3col > .zui-layout-item + .zui-layout-item + .zui-layout-item {
   text-align: right;
-}
-
-dl, ol, ul {
-  margin: 0 0 20px 0;
 }
 
 .zui-nav {
@@ -3260,44 +3444,4 @@ a.zui-tag {
 }
 .zui-toolbar .zui-toolbar-secondary > .zui-button-group:last-child {
   margin-right: 0px;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-p {
-  margin: 0px 0px 20px 0px;
-}
-
-.visible {
-  visibility: visible;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.show-inline {
-  display: inline-block;
 }
