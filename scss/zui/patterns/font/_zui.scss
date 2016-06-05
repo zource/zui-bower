@@ -1,225 +1,671 @@
 
-@font-face {
-	font-family: "zui";
-	src: url("../fonts/zui.eot?7d827b69e63eac164976c7a981ff74a4");
-	src: url("../fonts/zui.eot?#iefix") format("embedded-opentype"),
+    
+    @font-face {
+        font-family: "zui";
+        src: url("../fonts/zui.eot?7d827b69e63eac164976c7a981ff74a4");
+        src: url("../fonts/zui.eot?#iefix") format("embedded-opentype"),
 		url("../fonts/zui.woff?7d827b69e63eac164976c7a981ff74a4") format("woff"),
 		url("../fonts/zui.ttf?7d827b69e63eac164976c7a981ff74a4") format("truetype"),
 		url("../fonts/zui.svg?7d827b69e63eac164976c7a981ff74a4#zui") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
+        font-weight: normal;
+        font-style: normal;
+    }
+
 
 .zui-icon {
-	font-family: "zui";
-	display: inline-block;
-	vertical-align: middle;
-	line-height: 1;
-	font-weight: normal;
-	font-style: normal;
-	speak: none;
-	text-decoration: inherit;
-	text-transform: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+        font-family: "zui";
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+        font-weight: normal;
+        font-style: normal;
+        speak: none;
+        text-decoration: inherit;
+        text-transform: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
 
-// Icons
+
+    // Icons
+    
+/// The content character for icon arrow-down.
+/// @type string
+/// @pattern font
+
+$zui-font-content-arrow-down: "\f101" !default;
+
+
+
 
 .zui-icon-arrow-down:before {
-	content: "\f101";
+    content: $zui-font-content-arrow-down;
 }
+    
+/// The content character for icon arrow-left.
+/// @type string
+/// @pattern font
+
+$zui-font-content-arrow-left: "\f102" !default;
+
+
+
 
 .zui-icon-arrow-left:before {
-	content: "\f102";
+    content: $zui-font-content-arrow-left;
 }
+    
+/// The content character for icon arrow-right.
+/// @type string
+/// @pattern font
+
+$zui-font-content-arrow-right: "\f103" !default;
+
+
+
 
 .zui-icon-arrow-right:before {
-	content: "\f103";
+    content: $zui-font-content-arrow-right;
 }
+    
+/// The content character for icon arrow-up.
+/// @type string
+/// @pattern font
+
+$zui-font-content-arrow-up: "\f104" !default;
+
+
+
 
 .zui-icon-arrow-up:before {
-	content: "\f104";
+    content: $zui-font-content-arrow-up;
 }
+    
+/// The content character for icon bookmark.
+/// @type string
+/// @pattern font
+
+$zui-font-content-bookmark: "\f105" !default;
+
+
+
 
 .zui-icon-bookmark:before {
-	content: "\f105";
+    content: $zui-font-content-bookmark;
 }
+    
+/// The content character for icon bug.
+/// @type string
+/// @pattern font
+
+$zui-font-content-bug: "\f106" !default;
+
+
+
 
 .zui-icon-bug:before {
-	content: "\f106";
+    content: $zui-font-content-bug;
 }
+    
+/// The content character for icon calendar.
+/// @type string
+/// @pattern font
+
+$zui-font-content-calendar: "\f107" !default;
+
+
+
 
 .zui-icon-calendar:before {
-	content: "\f107";
+    content: $zui-font-content-calendar;
 }
+    
+/// The content character for icon ccw.
+/// @type string
+/// @pattern font
+
+$zui-font-content-ccw: "\f108" !default;
+
+
+
 
 .zui-icon-ccw:before {
-	content: "\f108";
+    content: $zui-font-content-ccw;
 }
+    
+/// The content character for icon check.
+/// @type string
+/// @pattern font
+
+$zui-font-content-check: "\f109" !default;
+
+
+
 
 .zui-icon-check:before {
-	content: "\f109";
+    content: $zui-font-content-check;
 }
+    
+/// The content character for icon code.
+/// @type string
+/// @pattern font
+
+$zui-font-content-code: "\f10a" !default;
+
+
+
 
 .zui-icon-code:before {
-	content: "\f10a";
+    content: $zui-font-content-code;
 }
+    
+/// The content character for icon cw.
+/// @type string
+/// @pattern font
+
+$zui-font-content-cw: "\f10b" !default;
+
+
+
 
 .zui-icon-cw:before {
-	content: "\f10b";
+    content: $zui-font-content-cw;
 }
+    
+/// The content character for icon danger.
+/// @type string
+/// @pattern font
+
+$zui-font-content-danger: "\f10c" !default;
+
+
+
 
 .zui-icon-danger:before {
-	content: "\f10c";
+    content: $zui-font-content-danger;
 }
+    
+/// The content character for icon download.
+/// @type string
+/// @pattern font
+
+$zui-font-content-download: "\f10d" !default;
+
+
+
 
 .zui-icon-download:before {
-	content: "\f10d";
+    content: $zui-font-content-download;
 }
+    
+/// The content character for icon female.
+/// @type string
+/// @pattern font
+
+$zui-font-content-female: "\f10e" !default;
+
+
+
 
 .zui-icon-female:before {
-	content: "\f10e";
+    content: $zui-font-content-female;
 }
+    
+/// The content character for icon gear.
+/// @type string
+/// @pattern font
+
+$zui-font-content-gear: "\f10f" !default;
+
+
+
 
 .zui-icon-gear:before {
-	content: "\f10f";
+    content: $zui-font-content-gear;
 }
+    
+/// The content character for icon gift.
+/// @type string
+/// @pattern font
+
+$zui-font-content-gift: "\f110" !default;
+
+
+
 
 .zui-icon-gift:before {
-	content: "\f110";
+    content: $zui-font-content-gift;
 }
+    
+/// The content character for icon git-branch.
+/// @type string
+/// @pattern font
+
+$zui-font-content-git-branch: "\f111" !default;
+
+
+
 
 .zui-icon-git-branch:before {
-	content: "\f111";
+    content: $zui-font-content-git-branch;
 }
+    
+/// The content character for icon git-commit.
+/// @type string
+/// @pattern font
+
+$zui-font-content-git-commit: "\f112" !default;
+
+
+
 
 .zui-icon-git-commit:before {
-	content: "\f112";
+    content: $zui-font-content-git-commit;
 }
+    
+/// The content character for icon git-compare.
+/// @type string
+/// @pattern font
+
+$zui-font-content-git-compare: "\f113" !default;
+
+
+
 
 .zui-icon-git-compare:before {
-	content: "\f113";
+    content: $zui-font-content-git-compare;
 }
+    
+/// The content character for icon git-merge.
+/// @type string
+/// @pattern font
+
+$zui-font-content-git-merge: "\f114" !default;
+
+
+
 
 .zui-icon-git-merge:before {
-	content: "\f114";
+    content: $zui-font-content-git-merge;
 }
+    
+/// The content character for icon git-pull-request.
+/// @type string
+/// @pattern font
+
+$zui-font-content-git-pull-request: "\f115" !default;
+
+
+
 
 .zui-icon-git-pull-request:before {
-	content: "\f115";
+    content: $zui-font-content-git-pull-request;
 }
+    
+/// The content character for icon globe.
+/// @type string
+/// @pattern font
+
+$zui-font-content-globe: "\f116" !default;
+
+
+
 
 .zui-icon-globe:before {
-	content: "\f116";
+    content: $zui-font-content-globe;
 }
+    
+/// The content character for icon heart.
+/// @type string
+/// @pattern font
+
+$zui-font-content-heart: "\f117" !default;
+
+
+
 
 .zui-icon-heart:before {
-	content: "\f117";
+    content: $zui-font-content-heart;
 }
+    
+/// The content character for icon info.
+/// @type string
+/// @pattern font
+
+$zui-font-content-info: "\f118" !default;
+
+
+
 
 .zui-icon-info:before {
-	content: "\f118";
+    content: $zui-font-content-info;
 }
+    
+/// The content character for icon light-bulb.
+/// @type string
+/// @pattern font
+
+$zui-font-content-light-bulb: "\f119" !default;
+
+
+
 
 .zui-icon-light-bulb:before {
-	content: "\f119";
+    content: $zui-font-content-light-bulb;
 }
+    
+/// The content character for icon male.
+/// @type string
+/// @pattern font
+
+$zui-font-content-male: "\f11a" !default;
+
+
+
 
 .zui-icon-male:before {
-	content: "\f11a";
+    content: $zui-font-content-male;
 }
+    
+/// The content character for icon mention.
+/// @type string
+/// @pattern font
+
+$zui-font-content-mention: "\f11b" !default;
+
+
+
 
 .zui-icon-mention:before {
-	content: "\f11b";
+    content: $zui-font-content-mention;
 }
+    
+/// The content character for icon monitor.
+/// @type string
+/// @pattern font
+
+$zui-font-content-monitor: "\f11c" !default;
+
+
+
 
 .zui-icon-monitor:before {
-	content: "\f11c";
+    content: $zui-font-content-monitor;
 }
+    
+/// The content character for icon mortar-board.
+/// @type string
+/// @pattern font
+
+$zui-font-content-mortar-board: "\f11d" !default;
+
+
+
 
 .zui-icon-mortar-board:before {
-	content: "\f11d";
+    content: $zui-font-content-mortar-board;
 }
+    
+/// The content character for icon organization.
+/// @type string
+/// @pattern font
+
+$zui-font-content-organization: "\f11e" !default;
+
+
+
 
 .zui-icon-organization:before {
-	content: "\f11e";
+    content: $zui-font-content-organization;
 }
+    
+/// The content character for icon person.
+/// @type string
+/// @pattern font
+
+$zui-font-content-person: "\f11f" !default;
+
+
+
 
 .zui-icon-person:before {
-	content: "\f11f";
+    content: $zui-font-content-person;
 }
+    
+/// The content character for icon plus.
+/// @type string
+/// @pattern font
+
+$zui-font-content-plus: "\f120" !default;
+
+
+
 
 .zui-icon-plus:before {
-	content: "\f120";
+    content: $zui-font-content-plus;
 }
+    
+/// The content character for icon pulse.
+/// @type string
+/// @pattern font
+
+$zui-font-content-pulse: "\f121" !default;
+
+
+
 
 .zui-icon-pulse:before {
-	content: "\f121";
+    content: $zui-font-content-pulse;
 }
+    
+/// The content character for icon puzzle.
+/// @type string
+/// @pattern font
+
+$zui-font-content-puzzle: "\f122" !default;
+
+
+
 
 .zui-icon-puzzle:before {
-	content: "\f122";
+    content: $zui-font-content-puzzle;
 }
+    
+/// The content character for icon question.
+/// @type string
+/// @pattern font
+
+$zui-font-content-question: "\f123" !default;
+
+
+
 
 .zui-icon-question:before {
-	content: "\f123";
+    content: $zui-font-content-question;
 }
+    
+/// The content character for icon radio-tower.
+/// @type string
+/// @pattern font
+
+$zui-font-content-radio-tower: "\f124" !default;
+
+
+
 
 .zui-icon-radio-tower:before {
-	content: "\f124";
+    content: $zui-font-content-radio-tower;
 }
+    
+/// The content character for icon refresh.
+/// @type string
+/// @pattern font
+
+$zui-font-content-refresh: "\f125" !default;
+
+
+
 
 .zui-icon-refresh:before {
-	content: "\f125";
+    content: $zui-font-content-refresh;
 }
+    
+/// The content character for icon repo-forked.
+/// @type string
+/// @pattern font
+
+$zui-font-content-repo-forked: "\f126" !default;
+
+
+
 
 .zui-icon-repo-forked:before {
-	content: "\f126";
+    content: $zui-font-content-repo-forked;
 }
+    
+/// The content character for icon results.
+/// @type string
+/// @pattern font
+
+$zui-font-content-results: "\f127" !default;
+
+
+
 
 .zui-icon-results:before {
-	content: "\f127";
+    content: $zui-font-content-results;
 }
+    
+/// The content character for icon rocket.
+/// @type string
+/// @pattern font
+
+$zui-font-content-rocket: "\f128" !default;
+
+
+
 
 .zui-icon-rocket:before {
-	content: "\f128";
+    content: $zui-font-content-rocket;
 }
+    
+/// The content character for icon rss.
+/// @type string
+/// @pattern font
+
+$zui-font-content-rss: "\f129" !default;
+
+
+
 
 .zui-icon-rss:before {
-	content: "\f129";
+    content: $zui-font-content-rss;
 }
+    
+/// The content character for icon sort-asc.
+/// @type string
+/// @pattern font
+
+$zui-font-content-sort-asc: "\f12a" !default;
+
+
+
 
 .zui-icon-sort-asc:before {
-	content: "\f12a";
+    content: $zui-font-content-sort-asc;
 }
+    
+/// The content character for icon sort-desc.
+/// @type string
+/// @pattern font
+
+$zui-font-content-sort-desc: "\f12b" !default;
+
+
+
 
 .zui-icon-sort-desc:before {
-	content: "\f12b";
+    content: $zui-font-content-sort-desc;
 }
+    
+/// The content character for icon star.
+/// @type string
+/// @pattern font
+
+$zui-font-content-star: "\f12c" !default;
+
+
+
 
 .zui-icon-star:before {
-	content: "\f12c";
+    content: $zui-font-content-star;
 }
+    
+/// The content character for icon tags.
+/// @type string
+/// @pattern font
+
+$zui-font-content-tags: "\f12d" !default;
+
+
+
 
 .zui-icon-tags:before {
-	content: "\f12d";
+    content: $zui-font-content-tags;
 }
+    
+/// The content character for icon thumbnails.
+/// @type string
+/// @pattern font
+
+$zui-font-content-thumbnails: "\f12e" !default;
+
+
+
 
 .zui-icon-thumbnails:before {
-	content: "\f12e";
+    content: $zui-font-content-thumbnails;
 }
+    
+/// The content character for icon upload.
+/// @type string
+/// @pattern font
+
+$zui-font-content-upload: "\f12f" !default;
+
+
+
 
 .zui-icon-upload:before {
-	content: "\f12f";
+    content: $zui-font-content-upload;
 }
+    
+/// The content character for icon warning.
+/// @type string
+/// @pattern font
+
+$zui-font-content-warning: "\f130" !default;
+
+
+
 
 .zui-icon-warning:before {
-	content: "\f130";
+    content: $zui-font-content-warning;
 }
+    
+/// The content character for icon x.
+/// @type string
+/// @pattern font
+
+$zui-font-content-x: "\f131" !default;
+
+
+
 
 .zui-icon-x:before {
-	content: "\f131";
+    content: $zui-font-content-x;
 }
+    
+
