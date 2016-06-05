@@ -476,6 +476,224 @@ p {
   display: inline-block;
 }
 
+@font-face {
+  font-family: "zui";
+  src: url("../fonts/zui.eot?7d827b69e63eac164976c7a981ff74a4");
+  src: url("../fonts/zui.eot?#iefix") format("embedded-opentype"), url("../fonts/zui.woff?7d827b69e63eac164976c7a981ff74a4") format("woff"), url("../fonts/zui.ttf?7d827b69e63eac164976c7a981ff74a4") format("truetype"), url("../fonts/zui.svg?7d827b69e63eac164976c7a981ff74a4#zui") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.zui-icon {
+  font-family: "zui";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zui-icon-arrow-down:before {
+  content: "";
+}
+
+.zui-icon-arrow-left:before {
+  content: "";
+}
+
+.zui-icon-arrow-right:before {
+  content: "";
+}
+
+.zui-icon-arrow-up:before {
+  content: "";
+}
+
+.zui-icon-bookmark:before {
+  content: "";
+}
+
+.zui-icon-bug:before {
+  content: "";
+}
+
+.zui-icon-calendar:before {
+  content: "";
+}
+
+.zui-icon-ccw:before {
+  content: "";
+}
+
+.zui-icon-check:before {
+  content: "";
+}
+
+.zui-icon-code:before {
+  content: "";
+}
+
+.zui-icon-cw:before {
+  content: "";
+}
+
+.zui-icon-danger:before {
+  content: "";
+}
+
+.zui-icon-download:before {
+  content: "";
+}
+
+.zui-icon-female:before {
+  content: "";
+}
+
+.zui-icon-gear:before {
+  content: "";
+}
+
+.zui-icon-gift:before {
+  content: "";
+}
+
+.zui-icon-git-branch:before {
+  content: "";
+}
+
+.zui-icon-git-commit:before {
+  content: "";
+}
+
+.zui-icon-git-compare:before {
+  content: "";
+}
+
+.zui-icon-git-merge:before {
+  content: "";
+}
+
+.zui-icon-git-pull-request:before {
+  content: "";
+}
+
+.zui-icon-globe:before {
+  content: "";
+}
+
+.zui-icon-heart:before {
+  content: "";
+}
+
+.zui-icon-info:before {
+  content: "";
+}
+
+.zui-icon-light-bulb:before {
+  content: "";
+}
+
+.zui-icon-male:before {
+  content: "";
+}
+
+.zui-icon-mention:before {
+  content: "";
+}
+
+.zui-icon-monitor:before {
+  content: "";
+}
+
+.zui-icon-mortar-board:before {
+  content: "";
+}
+
+.zui-icon-organization:before {
+  content: "";
+}
+
+.zui-icon-person:before {
+  content: "";
+}
+
+.zui-icon-plus:before {
+  content: "";
+}
+
+.zui-icon-pulse:before {
+  content: "";
+}
+
+.zui-icon-puzzle:before {
+  content: "";
+}
+
+.zui-icon-question:before {
+  content: "";
+}
+
+.zui-icon-radio-tower:before {
+  content: "";
+}
+
+.zui-icon-refresh:before {
+  content: "";
+}
+
+.zui-icon-repo-forked:before {
+  content: "";
+}
+
+.zui-icon-results:before {
+  content: "";
+}
+
+.zui-icon-rocket:before {
+  content: "";
+}
+
+.zui-icon-rss:before {
+  content: "";
+}
+
+.zui-icon-sort-asc:before {
+  content: "";
+}
+
+.zui-icon-sort-desc:before {
+  content: "";
+}
+
+.zui-icon-star:before {
+  content: "";
+}
+
+.zui-icon-tags:before {
+  content: "";
+}
+
+.zui-icon-thumbnails:before {
+  content: "";
+}
+
+.zui-icon-upload:before {
+  content: "";
+}
+
+.zui-icon-warning:before {
+  content: "";
+}
+
+.zui-icon-x:before {
+  content: "";
+}
+
 .zui-alert {
   background: #FFF;
   border: 1px solid #AA2D4C;
@@ -512,6 +730,7 @@ p {
   speak: none;
   top: 50%;
 }
+
 .zui-alert.zui-alert-danger {
   background: #FFF;
   border: 1px solid #D04437;
@@ -522,6 +741,7 @@ p {
 .zui-alert.zui-alert-danger:after {
   content: "";
 }
+
 .zui-alert.zui-alert-success {
   background: #FFF;
   border: 1px solid #8EB021;
@@ -532,6 +752,7 @@ p {
 .zui-alert.zui-alert-success:after {
   content: "";
 }
+
 .zui-alert.zui-alert-warning {
   background: #FFF;
   border: 1px solid #FF8D1C;
@@ -542,6 +763,7 @@ p {
 .zui-alert.zui-alert-warning:after {
   content: "";
 }
+
 .zui-alert.zui-alert-subtle {
   background: #FFF;
   border: 1px solid #DFDFDF;
@@ -552,12 +774,11 @@ p {
 .zui-alert.zui-alert-subtle:after {
   content: "";
 }
+
 .zui-alert .zui-alert-title {
   font-weight: 700;
 }
-.zui-alert p:last-child {
-  margin-bottom: 0px;
-}
+
 .zui-alert .zui-icon-x[role="button"] {
   color: #707070;
   cursor: pointer;
@@ -566,8 +787,13 @@ p {
   right: 20px;
   top: 20px;
 }
+
 .zui-alert .zui-icon-x[role="button"]:hover {
   color: #000;
+}
+
+.zui-alert p:last-of-type {
+  margin-bottom: 0;
 }
 
 .zui-badge {
@@ -1855,224 +2081,6 @@ input[type="submit"].disabled {
     margin-right: 100%;
   }
 }
-@font-face {
-  font-family: "zui";
-  src: url("../fonts/zui.eot?7d827b69e63eac164976c7a981ff74a4");
-  src: url("../fonts/zui.eot?#iefix") format("embedded-opentype"), url("../fonts/zui.woff?7d827b69e63eac164976c7a981ff74a4") format("woff"), url("../fonts/zui.ttf?7d827b69e63eac164976c7a981ff74a4") format("truetype"), url("../fonts/zui.svg?7d827b69e63eac164976c7a981ff74a4#zui") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-.zui-icon {
-  font-family: "zui";
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.zui-icon-arrow-down:before {
-  content: "";
-}
-
-.zui-icon-arrow-left:before {
-  content: "";
-}
-
-.zui-icon-arrow-right:before {
-  content: "";
-}
-
-.zui-icon-arrow-up:before {
-  content: "";
-}
-
-.zui-icon-bookmark:before {
-  content: "";
-}
-
-.zui-icon-bug:before {
-  content: "";
-}
-
-.zui-icon-calendar:before {
-  content: "";
-}
-
-.zui-icon-ccw:before {
-  content: "";
-}
-
-.zui-icon-check:before {
-  content: "";
-}
-
-.zui-icon-code:before {
-  content: "";
-}
-
-.zui-icon-cw:before {
-  content: "";
-}
-
-.zui-icon-danger:before {
-  content: "";
-}
-
-.zui-icon-download:before {
-  content: "";
-}
-
-.zui-icon-female:before {
-  content: "";
-}
-
-.zui-icon-gear:before {
-  content: "";
-}
-
-.zui-icon-gift:before {
-  content: "";
-}
-
-.zui-icon-git-branch:before {
-  content: "";
-}
-
-.zui-icon-git-commit:before {
-  content: "";
-}
-
-.zui-icon-git-compare:before {
-  content: "";
-}
-
-.zui-icon-git-merge:before {
-  content: "";
-}
-
-.zui-icon-git-pull-request:before {
-  content: "";
-}
-
-.zui-icon-globe:before {
-  content: "";
-}
-
-.zui-icon-heart:before {
-  content: "";
-}
-
-.zui-icon-info:before {
-  content: "";
-}
-
-.zui-icon-light-bulb:before {
-  content: "";
-}
-
-.zui-icon-male:before {
-  content: "";
-}
-
-.zui-icon-mention:before {
-  content: "";
-}
-
-.zui-icon-monitor:before {
-  content: "";
-}
-
-.zui-icon-mortar-board:before {
-  content: "";
-}
-
-.zui-icon-organization:before {
-  content: "";
-}
-
-.zui-icon-person:before {
-  content: "";
-}
-
-.zui-icon-plus:before {
-  content: "";
-}
-
-.zui-icon-pulse:before {
-  content: "";
-}
-
-.zui-icon-puzzle:before {
-  content: "";
-}
-
-.zui-icon-question:before {
-  content: "";
-}
-
-.zui-icon-radio-tower:before {
-  content: "";
-}
-
-.zui-icon-refresh:before {
-  content: "";
-}
-
-.zui-icon-repo-forked:before {
-  content: "";
-}
-
-.zui-icon-results:before {
-  content: "";
-}
-
-.zui-icon-rocket:before {
-  content: "";
-}
-
-.zui-icon-rss:before {
-  content: "";
-}
-
-.zui-icon-sort-asc:before {
-  content: "";
-}
-
-.zui-icon-sort-desc:before {
-  content: "";
-}
-
-.zui-icon-star:before {
-  content: "";
-}
-
-.zui-icon-tags:before {
-  content: "";
-}
-
-.zui-icon-thumbnails:before {
-  content: "";
-}
-
-.zui-icon-upload:before {
-  content: "";
-}
-
-.zui-icon-warning:before {
-  content: "";
-}
-
-.zui-icon-x:before {
-  content: "";
-}
-
 .zui-footer {
   background-color: #F5F5F5;
   border-top: 1px solid #CCC;
