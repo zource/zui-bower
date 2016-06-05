@@ -489,7 +489,7 @@ p {
   padding-top: 20px;
   position: relative;
   word-wrap: break-word;
-  word-break: break-word;
+  word-break: break-all;
 }
 .zui-alert:before {
   background-color: #AA2D4C;

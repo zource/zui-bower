@@ -13,7 +13,7 @@ input[type="search"],
 input[type="tel"],
 input[type="email"],
 input[type="url"] {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 
     background: #FFF;
     border: 1px solid #CCC;
@@ -30,7 +30,7 @@ input[type="url"] {
     &[disabled] {
         background-color: #F5F5F5;
         color: #999;
-        cursor: $cursor-not-allowed-value;
+        cursor: $zui-cursor-not-allowed-value;
     }
 }
 

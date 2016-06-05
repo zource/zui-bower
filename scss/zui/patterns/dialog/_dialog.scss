@@ -21,7 +21,7 @@
     }
 
     .zui-dialog-title {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #F5F5F5;
         border-bottom: 1px solid #CCC;
@@ -35,7 +35,7 @@
     }
 
     .zui-dialog-page-menu {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #FFF;
         border-right: 1px solid #CCC;
@@ -56,7 +56,7 @@
         li.zui-page-menu-item button.zui-item-button {
             background: 0 0;
             border: 0;
-            color: $color-primary;
+            color: $zui-color-primary;
             cursor: pointer;
             font-family: inherit;
             font-size: inherit;
@@ -75,7 +75,7 @@
     }
 
     .zui-dialog-page-body {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #FFF;
         height: 400px;
@@ -96,7 +96,7 @@
     }
 
     .zui-dialog-button-panel {
-        @include box-sizing(border-box);
+        @include zui-box-sizing(border-box);
 
         background: #F5F5F5;
         border-top: 1px solid #CCC;
@@ -115,7 +115,7 @@
         a.zui-button-panel-link {
             background: 0 0;
             border-color: rgba(0, 0, 0, 0);
-            color: $color-primary;
+            color: $zui-color-primary;
             display: inline-block;
             padding: 5px 0;
             text-decoration: none;

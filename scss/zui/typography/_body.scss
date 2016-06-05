@@ -12,7 +12,7 @@ $body-overflow-y: scroll !default;
 $body-overflow-wrap: inherit !default;
 
 html {
-    @include box-sizing(border-box);
+    @include zui-box-sizing(border-box);
 }
 
 html, body {
@@ -23,7 +23,7 @@ html, body {
 body {
     background: $body-bg;
     color: $body-font-color;
-    cursor: $cursor-auto-value;
+    cursor: $zui-cursor-auto-value;
     font-family: $body-font-family;
     font-style: $body-font-style;
     font-weight: $body-font-weight;

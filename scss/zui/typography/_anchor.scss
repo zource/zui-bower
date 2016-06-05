@@ -1,4 +1,4 @@
-$anchor-color: $color-primary !default;
+$anchor-color: $zui-color-primary !default;
 $anchor-color-disabled: #999 !default;
 $anchor-text-decoration: none !default;
 $anchor-text-decoration-hover: underline !default;
@@ -14,7 +14,7 @@ a:active, a:focus, a:hover {
 
 a.disabled {
     color: $anchor-color-disabled;
-    cursor: $cursor-not-allowed-value;
+    cursor: $zui-cursor-not-allowed-value;
 }
 
 a.disabled:active, 
