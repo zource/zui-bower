@@ -426,8 +426,8 @@ h6 small {
 }
 
 hr {
-  background-color: #CCC;
-  border: 0px;
+  background: #CCC;
+  border: 1px;
   height: 1px;
   margin: 20px 0px;
 }
