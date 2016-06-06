@@ -2196,6 +2196,7 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: whitesmoke;
   border: 1px solid #CCC;
   border-radius: 3.01px;
   font-family: inherit;
