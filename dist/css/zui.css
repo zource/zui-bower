@@ -364,43 +364,43 @@ dl, ol, ul {
   margin: 0 0 20px 0;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
 p {
   margin: 0px 0px 20px 0px;
 }
 
-.visible {
+.zui-text-left {
+  text-align: left;
+}
+
+.zui-text-right {
+  text-align: right;
+}
+
+.zui-text-center {
+  text-align: center;
+}
+
+.zui-text-justify {
+  text-align: justify;
+}
+
+.zui-visible {
   visibility: visible;
 }
 
-.hidden {
+.zui-hidden {
   visibility: hidden;
 }
 
-.hide {
+.zui-hide {
   display: none;
 }
 
-.show {
+.zui-show {
   display: block;
 }
 
-.show-inline {
+.zui-show-inline {
   display: inline-block;
 }
 
