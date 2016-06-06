@@ -353,78 +353,6 @@ a.disabled:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  line-height: 1.25;
-  text-transform: none;
-  margin: 0px 0px 20px 0px;
-}
-
-h1 {
-  color: #333;
-  font-size: 2.375rem;
-}
-h1.zui-subheader {
-  color: #6F6F6F;
-  font-size: 2.375rem;
-}
-
-h2 {
-  color: #333;
-  font-size: 2.125rem;
-}
-h2.zui-subheader {
-  color: #6F6F6F;
-  font-size: 2.125rem;
-}
-
-h3 {
-  color: #333;
-  font-size: 1.875rem;
-}
-h3.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.875rem;
-}
-
-h4 {
-  color: #333;
-  font-size: 1.625rem;
-}
-h4.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.625rem;
-}
-
-h5 {
-  color: #333;
-  font-size: 1.375rem;
-}
-h5.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.375rem;
-}
-
-h6 {
-  color: #333;
-  font-size: 1.125rem;
-}
-h6.zui-subheader {
-  color: #6F6F6F;
-  font-size: 1.125rem;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 60%;
-  color: #6F6F6F;
-  line-height: 0;
-}
-
 hr {
   background: #CCC;
   border: 1px;
@@ -2409,6 +2337,78 @@ form .zui-icon-required {
 .zui-form-short select,
 .zui-form-short textarea {
   max-width: 75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.25;
+  text-transform: none;
+  margin: 0px 0px 20px 0px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.375rem;
+}
+h1.zui-subheader {
+  color: #6F6F6F;
+  font-size: 2.375rem;
+}
+
+h2 {
+  color: #333;
+  font-size: 2.125rem;
+}
+h2.zui-subheader {
+  color: #6F6F6F;
+  font-size: 2.125rem;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.875rem;
+}
+h3.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.875rem;
+}
+
+h4 {
+  color: #333;
+  font-size: 1.625rem;
+}
+h4.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.625rem;
+}
+
+h5 {
+  color: #333;
+  font-size: 1.375rem;
+}
+h5.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.375rem;
+}
+
+h6 {
+  color: #333;
+  font-size: 1.125rem;
+}
+h6.zui-subheader {
+  color: #6F6F6F;
+  font-size: 1.125rem;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  color: #6F6F6F;
+  line-height: 0;
 }
 
 a img {
