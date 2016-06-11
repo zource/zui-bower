@@ -329,7 +329,7 @@ body {
   position: relative;
 }
 
-[aria-hidden=true] {
+[aria-hidden='true'] {
   display: none;
 }
 
@@ -1058,22 +1058,15 @@ input[type="submit"].disabled {
   border: 1px solid #CCC;
   border-radius: 10px;
   display: none;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 225px;
   overflow: hidden;
-  width: 800px;
+  position: relative;
   z-index: 3000;
 }
 .zui-dialog.zui-dialog-inline {
   display: block;
 }
-.zui-dialog h2.zui-dialog-title {
-  color: #333;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-}
-.zui-dialog .zui-dialog-title {
+.zui-dialog .zui-dialog-header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1083,30 +1076,99 @@ input[type="submit"].disabled {
   margin: 0;
   overflow: hidden;
   padding: 15px 20px;
-  position: relative;
+  position: absolute;
   text-overflow: ellipsis;
+  top: 0;
   white-space: nowrap;
+  width: 100%;
 }
-.zui-dialog .zui-dialog-page-menu {
+.zui-dialog .zui-dialog-header h2 {
+  color: #333;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.zui-dialog .zui-dialog-header .zui-icon-x {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.zui-dialog .zui-dialog-footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #FFF;
-  border-right: 1px solid #CCC;
+  background: #F5F5F5;
+  border-top: 1px solid #CCC;
+  bottom: 0;
+  clear: both;
+  height: 51px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+.zui-dialog .zui-dialog-footer a,
+.zui-dialog .zui-dialog-footer button {
+  margin: 0 10px 0 0;
+}
+.zui-dialog .zui-dialog-footer a {
+  background: 0 0;
+  border-color: transparent;
+  color: #AA2D4C;
+  display: inline-block;
+  padding: 5px 0;
+  text-decoration: none;
+  text-shadow: none;
+}
+.zui-dialog .zui-dialog-footer-left {
   float: left;
-  height: 400px;
-  list-style: none;
-  margin: 0;
+  text-align: left;
+}
+.zui-dialog .zui-dialog-footer-left .zui-dialog-hint {
+  color: #707070;
+  line-height: 31px;
+  overflow: hidden;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zui-dialog .zui-dialog-footer-right {
+  float: right;
+  text-align: right;
+}
+.zui-dialog .zui-dialog-page {
+  height: 100%;
+  padding-bottom: 51px;
+  padding-top: 56px;
+  width: 100%;
+}
+.zui-dialog .zui-dialog-menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #CCC;
+  bottom: 51px;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 10px 10px 20px;
-  width: 25%;
+  position: absolute;
+  top: 56px;
+  width: 20%;
 }
-.zui-dialog .zui-dialog-page-menu li.zui-page-menu-item.selected button.zui-item-button {
+.zui-dialog .zui-dialog-menu ul {
+  background: #FFF;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.zui-dialog .zui-dialog-menu li[aria-selected="true"] button {
   color: #333;
   font-weight: 700;
 }
-.zui-dialog .zui-dialog-page-menu li.zui-page-menu-item button.zui-item-button {
+.zui-dialog .zui-dialog-menu li button {
   background: 0 0;
   border: 0;
   color: #AA2D4C;
@@ -1120,77 +1182,61 @@ input[type="submit"].disabled {
   text-decoration: none;
   width: 100%;
 }
-.zui-dialog .zui-dialog-page-menu li.zui-page-menu-item button.zui-item-button:focus,
-.zui-dialog .zui-dialog-page-menu li.zui-page-menu-item button.zui-item-button:hover {
+.zui-dialog .zui-dialog-menu li button:focus,
+.zui-dialog .zui-dialog-menu li button:hover {
   background-color: #E6E6E6;
 }
 .zui-dialog .zui-dialog-page-body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #FFF;
-  height: 400px;
-  overflow: auto;
+  bottom: 51px;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 56px;
 }
-.zui-dialog .zui-dialog-panel-body {
-  display: block;
+.zui-dialog .zui-dialog-menu + .zui-dialog-page-body {
+  left: 20%;
+}
+.zui-dialog .zui-dialog-panel {
   padding: 20px;
 }
-.zui-dialog .zui-dialog-panel-body.zui-dialog-panel-hidden {
+.zui-dialog .zui-dialog-panel[aria-hidden='true'] {
   display: none;
 }
-.zui-dialog .zui-dialog-panel-body > :first-child {
+.zui-dialog .zui-dialog-panel > :first-child {
   margin-top: 0;
 }
-.zui-dialog .zui-dialog-button-panel {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #F5F5F5;
-  border-top: 1px solid #CCC;
-  clear: both;
-  height: 51px;
-  overflow: hidden;
-  padding: 10px;
-  text-align: right;
-  width: 100%;
-}
-.zui-dialog .zui-dialog-button-panel a.zui-button-panel-link,
-.zui-dialog .zui-dialog-button-panel button.zui-button-panel-button {
-  margin: 0 10px 0 0;
-}
-.zui-dialog .zui-dialog-button-panel a.zui-button-panel-link {
-  background: 0 0;
-  border-color: transparent;
-  color: #AA2D4C;
-  display: inline-block;
-  padding: 5px 0;
-  text-decoration: none;
-  text-shadow: none;
-}
-.zui-dialog .zui-dialog-button-panel .zui-dialog-button-panel-left {
-  float: left;
-  text-align: left;
-}
-.zui-dialog .zui-dialog-button-panel .zui-dialog-button-panel-left .zui-dialog-hint {
-  color: #707070;
-  line-height: 31px;
-  overflow: hidden;
-  padding-right: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.zui-dialog .zui-dialog-button-panel .zui-dialog-button-panel-right {
-  float: right;
-  text-align: right;
+
+.zui-dialog.zui-dialog-tiny {
+  height: 20%;
+  width: 20%;
 }
 
 .zui-dialog.zui-dialog-small {
-  width: 450px;
+  height: 35%;
+  width: 35%;
 }
-.zui-dialog.zui-dialog-small .zui-dialog-page-menu,
-.zui-dialog.zui-dialog-small .zui-dialog-page-body {
-  height: 150px;
+
+.zui-dialog.zui-dialog-medium {
+  height: 50%;
+  width: 50%;
+}
+
+.zui-dialog.zui-dialog-large {
+  height: 65%;
+  width: 65%;
+}
+
+.zui-dialog.zui-dialog-xlarge {
+  height: 80%;
+  width: 80%;
+}
+
+.zui-dialog.zui-dialog-full {
+  border-radius: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 .zui-dropdown-menu {
