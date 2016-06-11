@@ -2840,6 +2840,34 @@ kbd {
   font-weight: bold;
 }
 
+.zui-progress-bar {
+  -webkit-animation: progressSlide 1s infinite linear;
+  animation: progressSlide 1s infinite linear;
+  background-color: #E9E9E9;
+  background-image: linear-gradient(90deg, #CCC 50%, transparent 50%, transparent 100%);
+  background-position: 0 0;
+  background-size: 20px 5px;
+  border-radius: 3px;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: skewX(45deg);
+  transform: skewX(45deg);
+  width: 100%;
+}
+.zui-progress-bar .zui-progress-bar-value {
+  background: #AA2D4C;
+  border-radius: 3px;
+  display: block;
+  height: 5px;
+  -webkit-transform: skewX(0);
+  transform: skewX(0);
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  position: absolute;
+  width: 100%;
+}
+
 .zui-select-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3045,34 +3073,6 @@ kbd {
   background: #FFF;
   border: 1px solid #F6C342;
   color: #594300;
-}
-
-.status-bar {
-  -webkit-animation: progressSlide 1s infinite linear;
-  animation: progressSlide 1s infinite linear;
-  background-color: #E9E9E9;
-  background-image: linear-gradient(90deg, #CCC 50%, transparent 50%, transparent 100%);
-  background-position: 0 0;
-  background-size: 20px 5px;
-  border-radius: 3px;
-  height: 5px;
-  overflow: hidden;
-  position: relative;
-  -webkit-transform: skewX(45deg);
-  transform: skewX(45deg);
-  width: 100%;
-}
-.status-bar .status-bar-value {
-  background: #AA2D4C;
-  border-radius: 3px;
-  display: block;
-  height: 5px;
-  -webkit-transform: skewX(0);
-  transform: skewX(0);
-  -webkit-transition: width .5s;
-  transition: width .5s;
-  position: absolute;
-  width: 100%;
 }
 
 .zui-steps {
