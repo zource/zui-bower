@@ -1320,6 +1320,9 @@ input[type="submit"].zui-button-primary:visited:hover {
 .zui-dialog .zui-dialog-panel {
   padding: 20px;
 }
+.zui-dialog .zui-dialog-panel-no-padding {
+  padding: 0px;
+}
 .zui-dialog .zui-dialog-panel[aria-hidden='true'] {
   display: none;
 }
@@ -1462,6 +1465,41 @@ input[type="submit"].zui-button-primary:visited:hover {
   clear: both;
   content: "";
   display: table;
+}
+
+.zui-dialog.zui-file-selection {
+  height: 500px;
+}
+.zui-dialog.zui-file-selection form {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.zui-dialog.zui-file-selection form .zui-error {
+  color: #FF0000;
+  margin-top: 10px;
+}
+.zui-dialog.zui-file-selection ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+.zui-dialog.zui-file-selection li {
+  display: inline-block;
+  height: 48px;
+  margin: 0px 10px 10px 0px;
+  width: 48px;
+}
+.zui-dialog.zui-file-selection button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.zui-file-selection-preview img {
+  cursor: pointer;
 }
 
 .zui-grid-container,
