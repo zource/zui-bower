@@ -15,27 +15,41 @@
         }
     }
 
-    ul {
+    .zui-dialog-panel ul {
         list-style-type: none;
         margin: 20px;
         padding: 0;
     }
 
+    .zui-file-selection-toolbar {
+        background: #FAFAFA;
+        border-bottom: $zui-dialog-border;
+        padding: 10px 20px;
+
+        .zui-button-file {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    }
+
     li {
         display: inline-block;
-        height: 48px;
+        height: auto;
         margin: 0px 10px 10px 0px;
         width: 48px;
     }
 
-    button {
+    li button {
         background: none;
         border: 0;
+        height: auto;
         margin: 0;
         padding: 0;
     }
 }
 
-.zui-file-selection-preview img {
-    cursor: pointer;
+.zui-file-selection-trigger-thumb,
+.zui-file-selection-trigger-label {
+    cursor: $zui-cursor-pointer-value;
 }
