@@ -2267,71 +2267,6 @@ input[type="submit"].zui-button-primary:visited:hover {
   speak: none;
 }
 
-fieldset legend + .checkbox {
-  margin-top: 0;
-  padding-top: 5px;
-}
-fieldset div.checkbox {
-  margin: 5px 0 0;
-  padding: 0 0 0 20px;
-  position: relative;
-}
-
-input.checkbox {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 14px;
-  height: 15px;
-  left: 0;
-  margin: 0;
-  padding: 2px;
-  position: absolute;
-  vertical-align: baseline;
-}
-input.checkbox > label {
-  color: #333;
-}
-
-fieldset {
-  border: 0;
-  clear: both;
-  display: block;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-fieldset.zui-group {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  clear: both;
-  padding: 4px 0 4px 145px;
-  padding-top: 0;
-  position: relative;
-  margin: 1px 0;
-  width: 100%;
-}
-fieldset.zui-group:after, fieldset.zui-group:before {
-  content: " ";
-  display: table;
-}
-fieldset legend {
-  color: #707070;
-  display: block;
-  float: left;
-  margin-left: -145px;
-  padding: 5px 0 0;
-  position: relative;
-  text-align: right;
-  width: 130px;
-  word-wrap: break-word;
-}
-fieldset legend + .zui-field-group {
-  margin-top: 0;
-  padding-top: 5px;
-}
-
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -2393,32 +2328,6 @@ input[type="month"] {
   height: 30px;
 }
 
-fieldset legend + .radio {
-  margin-top: 0;
-  padding-top: 5px;
-}
-fieldset div.radio {
-  margin: 5px 0 0;
-  padding: 0 0 0 20px;
-  position: relative;
-}
-
-input.radio {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 14px;
-  height: 15px;
-  left: 0;
-  margin: 0;
-  padding: 2px;
-  position: absolute;
-  vertical-align: baseline;
-}
-input.radio > label {
-  color: #333;
-}
-
 select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2459,23 +2368,6 @@ textarea {
   width: 100%;
 }
 
-form .zui-icon-required {
-  left: 100%;
-  position: absolute;
-  top: 5px;
-}
-
-.zui-buttons-container {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  clear: both;
-  margin: 1px 0 0;
-  padding: 4px 0 4px 145px;
-  position: relative;
-  width: 100%;
-}
-
 .zui-field-group {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2502,8 +2394,10 @@ form .zui-icon-required {
   line-height: 1.66666666666667;
   margin: 5px 0 0;
 }
-.zui-field-group label {
+.zui-field-group label,
+.zui-field-group span.zui-form-label {
   color: #707070;
+  cursor: pointer;
   float: left;
   height: 30px;
   line-height: 30px;
@@ -2512,6 +2406,13 @@ form .zui-icon-required {
   text-align: right;
   width: 130px;
   word-wrap: break-word;
+}
+.zui-field-group .zui-field-group-inner label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: none;
+  margin-left: 0;
 }
 
 .zui-top-label .zui-field-group {
